@@ -29,14 +29,16 @@
         android:layout_width="@dimen/perguntaBtn_width"
         android:layout_height="@dimen/perguntaBtn_heigth"
         android:text="Primeira Pergunta"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginTop="80dp"
+        android:onClick="checkAnswer"/>
 
     <Button
         android:id="@+id/answerBtn2"
         android:layout_width="@dimen/perguntaBtn_width"
         android:layout_height="@dimen/perguntaBtn_heigth"
         android:text="Segunda Pergunta"
-        android:layout_marginTop="6dp"/>
+        android:layout_marginTop="6dp"
+        android:onClick="checkAnswer"/>
 
 
     <Button
@@ -44,7 +46,8 @@
         android:layout_width="@dimen/perguntaBtn_width"
         android:layout_height="@dimen/perguntaBtn_heigth"
         android:text="Terceira Pergunta"
-        android:layout_marginTop="6dp"/>
+        android:layout_marginTop="6dp"
+        android:onClick="checkAnswer"/>
 
 
     <Button
@@ -52,7 +55,8 @@
         android:layout_width="@dimen/perguntaBtn_width"
         android:layout_height="@dimen/perguntaBtn_heigth"
         android:text="Quarta Pergunta"
-        android:layout_marginTop="6dp"/>
+        android:layout_marginTop="6dp"
+        android:onClick="checkAnswer"/>
 
 
 </LinearLayout>

@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Quizzix.iml" filepath="$PROJECT_DIR$/Quizzix.iml" group="Quizzix" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Quizzix/app" />
     </modules>
   </component>
 </project>

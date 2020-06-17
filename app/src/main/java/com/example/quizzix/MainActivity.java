@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private String rightAsnwer;
     private int rigthAnswerCount = 0;
     private int quizCount = 1;
+    static final private int QUIZ_COUNT = 5;
 
     ArrayList<ArrayList<String>> quizArray = new ArrayList<>();
 
@@ -79,6 +80,38 @@ public class MainActivity extends AppCompatActivity {
         answerBtn1.setText(quiz.get(3));
 
         quizArray.remove(randomNum);
+    }
+
+    public void checkAnswer(View view){
+
+        Button answerBtn = (Button) findViewById(view.getId());
+        String btnText = answerBtn.getText().toString();
+
+        String alertTitle;
+
+        if(btnText.equals(rightAnswer)){
+            alertTitle = "Correto!";
+        } else {
+            alertTitle = "Errado!";
+        }
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(alertTitle);
+        builder.setMassage("Pergunta: : " + rightAsnwer);
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener(){
+           @Override
+           publicvoid onClick(DialogInterface dialogInterface, int i){
+               if(quizCount == QUIZ_COUNT){
+
+               } else {
+                    QUIZ_COUNT++;
+                    showNextQuiz();
+               }
+           }
+        });
+        builder.setCancelable(false);
+        builder.show();
+
     }
 
 }
